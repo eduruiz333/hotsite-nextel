@@ -12,6 +12,13 @@
   font-family: Avenir-condensed, sans-serif;
   src: url("../font/avenir-next-ssv/AvenirNextLTPro-DemiCn.otf"); }
 
+@font-face {
+  font-family: icomoon;
+  src: url(../font/icomoon/icomoon.eot?e9sodp);
+  src: url(../font/icomoon/icomoon.eot?e9sodp#iefix) format("embedded-opentype"), url(../font/icomoon/icomoon.ttf?e9sodp) format("truetype"), url(../font/icomoon/icomoon.woff?e9sodp) format("woff"), url(../font/icomoon/icomoon.svg?e9sodp#icomoon) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
 /* Header
 --------------------------------------------------- */
 /* Header */
@@ -76,6 +83,25 @@ main .banner {
       font-family: Avenir, sans-serif;
       font-weight: bold; }
 
+[class^=icon-] {
+  font-family: icomoon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-ecpf:before {
+  content: "\e925";
+  font-size: 150px; }
+
+.icon-ecnpj:before {
+  content: "\e923";
+  font-size: 150px; }
+
 /* Footer
 --------------------------------------------------- */
 /* Footer */
@@ -100,7 +126,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.04rem; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 1.9rem; }
 
 h2 {
   font-size: 1.8rem; }

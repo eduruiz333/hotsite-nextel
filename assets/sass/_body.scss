@@ -36,3 +36,24 @@ main {
 
 }
 
+[class^=icon-] {
+  font-family: $icomoon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ecpf:before {
+  content: "\e925";
+  font-size: 150px;
+}
+
+.icon-ecnpj:before {
+  content: "\e923";
+  font-size: 150px;
+}

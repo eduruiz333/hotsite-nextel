@@ -22,6 +22,18 @@ $black: #000;
   src: url("../font/avenir-next-ssv/AvenirNextLTPro-DemiCn.otf");
 }
 
+@font-face {
+  font-family: icomoon;
+  src: url(../font/icomoon/icomoon.eot?e9sodp);
+  src: url(../font/icomoon/icomoon.eot?e9sodp#iefix) format("embedded-opentype"),
+  url(../font/icomoon/icomoon.ttf?e9sodp) format("truetype"),
+  url(../font/icomoon/icomoon.woff?e9sodp) format("woff"),
+  url(../font/icomoon/icomoon.svg?e9sodp#icomoon) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
 $mainFont: Avenir, sans-serif;
 $bold: Avenir-bold, sans-serif;
 $condensed: Avenir-condensed, sans-serif;
+$icomoon: icomoon;
