@@ -1,0 +1,145 @@
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.search-result,
+.search-result div {
+  padding: 0;
+  margin: 0;
+}
+
+.search-result .box-msg {
+  border: solid 1px #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-result .result-thumb {
+  background-color: #f8f8f8;
+}
+
+.search-result .result-msg .msg-res-tit {
+  font-size: 20px;
+  font-weight: bold;
+  color: #44525d;
+  margin-bottom: 5px;
+}
+
+.search-result .result-msg .keywords {
+  font-size: 20px;
+  color: #fe416d;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.search-result .result-msg .keywords:before {
+  content: '“';
+}
+
+.search-result .result-msg .keywords:after {
+  content: '”';
+}
+
+.search-result .result-msg .insight {
+  font-size: 16px;
+  font-weight: bold;
+  color: #44525d;
+}
+
+.search-result .result-msg .insight-item {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #44525d;
+}
+
+.search-result .result-msg .insight-item:before {
+  content: ' - ';
+}
+
+.search-result .correlated {
+  color: #44525d;
+}
+
+  /* CAROUSEL */
+
+.search-result .correlated-items .owl-carousel {
+  /*box-shadow: 2px 2px 2px 1px rgba(255, 0, 0, 0.2);*/
+  -moz-box-shadow:    inset 0 0 10px #ffffff;
+  -webkit-box-shadow: inset 0 0 10px #ffffff;
+  box-shadow:         inset 0 0 10px #ffffff;
+}
+
+.search-result .correlated-items .owl-item {
+  display: flex;
+  justify-content: center;
+  border-left: solid 1px #f0f0f0;
+  border-right: solid 1px #f0f0f0;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+.owl-prev span,
+.owl-next span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+  padding: 0 10px 2px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+}
+.owl-prev span:hover,
+.owl-next span:hover {
+  background-color: #FFF;
+  opacity: 1;
+  color: #4a4a4a;
+}
+
+.owl-nav button:focus {
+  outline: none;
+}
+
+.owl-dots {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .owl-prev span {
+    margin-left: 20px;
+  }
+  .owl-next span {
+    margin-right: 20px;
+  }
+}
+
+.brand {
+  background-color: #fafafa;
+  border-top: solid 1px #efefef;
+}

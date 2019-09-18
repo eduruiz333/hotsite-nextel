@@ -1,0 +1,145 @@
+/* Table of content  
+--------------------------------------------------- */
+@font-face {
+  font-family: Avenir, sans-serif;
+  src: url("../font/avenir-next-ssv/AvenirNextLTPro-Regular.otf"); }
+
+@font-face {
+  font-family: Avenir-bold, sans-serif;
+  src: url("../font/avenir-next-ssv/AvenirNextLTPro-Bold.otf"); }
+
+@font-face {
+  font-family: Avenir-condensed, sans-serif;
+  src: url("../font/avenir-next-ssv/AvenirNextLTPro-DemiCn.otf"); }
+
+/* Header
+--------------------------------------------------- */
+/* Header */
+header .container {
+  z-index: 999;
+  background-color: #FF5A00;
+  height: 64px;
+  -webkit-box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2); }
+  header .container .logo img {
+    height: 15px; }
+  header .container .logo .pipe {
+    width: 1px;
+    background: white;
+    height: 15px;
+    margin: 0 10px; }
+  header .container .logo p {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: .6rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0; }
+  header .container .btn-dark {
+    background-color: #000;
+    color: #FFFFFF;
+    text-transform: uppercase; }
+    header .container .btn-dark:hover {
+      background-color: #FF5A00; }
+
+/* Body
+--------------------------------------------------- */
+/** Global **/
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -ms-font-smoothing: antialiased !important;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: ease-in-out all 300ms;
+  -o-transition: ease-in-out all 300ms;
+  transition: ease-in-out all 300ms; }
+
+/** Body **/
+body {
+  padding-top: 64px; }
+
+main .banner {
+  padding: 0;
+  height: 230px;
+  background: #000 url("../images/banner/banner-header.jpg") -240px 0 no-repeat;
+  background-size: cover; }
+  main .banner .banner-text {
+    margin-top: 14rem;
+    background-color: #F2F0EB; }
+    main .banner .banner-text h1 {
+      font-family: Avenir, sans-serif;
+      font-weight: bold; }
+
+/* Footer
+--------------------------------------------------- */
+/* Footer */
+/* Typography
+--------------------------------------------------- */
+/* Body */
+body {
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -.02rem;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Heading */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Avenir, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -.04rem; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+h6 {
+  font-size: 1rem; }
+
+p {
+  letter-spacing: .1rem; }
+
+a,
+a:hover {
+  text-decoration: none; }
+
+p, a {
+  line-height: 1rem; }
+
+p a {
+  color: #FF5A00 !important; }
+  p a:hover {
+    text-decoration: underline; }
+
+.mainColor {
+  color: #FF5A00; }
+
+.grey {
+  color: #DDDDDD; }
+
+.greyLigh {
+  color: #F2F0EB; }
+
+/* Responsive
+--------------------------------------------------- */

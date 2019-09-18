@@ -1,0 +1,27 @@
+// COLOR PALETTE
+
+// Backgrounds
+$mainColor: #FF5A00;
+$grey: #DDDDDD;
+$greyLigh: #F2F0EB;
+$white: #FFFFFF;
+$black: #000;
+
+// Font Types
+@font-face {
+  font-family: Avenir, sans-serif;
+  src: url("../font/avenir-next-ssv/AvenirNextLTPro-Regular.otf");
+}
+@font-face {
+  font-family: Avenir-bold, sans-serif;
+  src: url("../font/avenir-next-ssv/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: Avenir-condensed, sans-serif;
+  src: url("../font/avenir-next-ssv/AvenirNextLTPro-DemiCn.otf");
+}
+
+$mainFont: Avenir, sans-serif;
+$bold: Avenir-bold, sans-serif;
+$condensed: Avenir-condensed, sans-serif;

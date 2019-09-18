@@ -1,0 +1,75 @@
+
+/* Body */
+
+body {
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -.02rem;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Heading */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $mainFont;
+    font-weight: normal;
+    font-style: normal;
+    //line-height: 1rem;
+    letter-spacing: -.04rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    letter-spacing: .1rem;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+p, a {
+    line-height: 1rem;
+}
+p a {
+    color: $mainColor !important;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.mainColor {
+    color: $mainColor;
+}
+.grey {
+    color: $grey;
+}
+.greyLigh {
+    color: $greyLigh;
+}
