@@ -15,45 +15,190 @@ body {
 /** Body **/
 body {
   padding-top: 64px;
-}
+  * {
+    transition: all ease 300ms;
+  }
 
-main {
-  .banner {
+  //Logos e-cepf e e-cnpj
+  [class^=icon-] {
+    font-family: $icomoon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    display: block;
+    height: 30px;
+    margin: 0;
     padding: 0;
-    height: 230px;
-    background: #000 url('../images/banner/banner-header.jpg') -240px 0 no-repeat;
-    background-size: cover;
+  }
+  .icon-ecnpj:before {
+    content: "\e923";
+    font-size: 7rem;
+  }
 
-    .banner-text {
-      margin-top: 14rem;
-      background-color: $greyLigh;
-      h1 {
-        font-family: Avenir, sans-serif;
-        font-weight: bold;
+  // Definições de botões
+  .btn-default {
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+    padding: .8rem;
+    border: none;
+    background-color: $mainColor;
+    border-radius: .3rem;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    -webkit-box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.2);
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.2);
+
+    &:hover {
+      background-color: $black;
+      color: $mainColor;
+    }
+
+    &.sm {
+      padding: .5rem;
+      font-size: .8rem;
+    }
+
+    &.dark {
+      background-color: $black;
+      &:hover {
+        background-color: $white;
+      }
+    }
+
+    .btn-info {
+      background-color: $mainColor;
+      border-color: $mainColor;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        background-color: $black;
+        border-color: $mainColor;
+        color: $mainColor;
       }
     }
   }
 
-}
+  main {
+    .banner {
+      padding: 0;
+      background: #000 url('../images/banner/banner-header.jpg') -240px -5px no-repeat;
+      background-size: 200%;
 
-[class^=icon-] {
-  font-family: $icomoon;
-  speak: none;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+      .banner-text {
+        margin-top: 14rem;
+        background-color: $greyLigh;
 
-.icon-ecpf:before {
-  content: "\e925";
-  font-size: 150px;
-}
+        h1 {
+          font-family: Avenir, sans-serif;
+          font-weight: bold;
+        }
 
-.icon-ecnpj:before {
-  content: "\e923";
-  font-size: 150px;
-}
+        h6 {
+          font-size: 70%;
+        }
+
+        .prod-value {
+          display: flex;
+          font-weight: bold;
+          line-height: 6rem;
+          margin-bottom: 0;
+
+          .txt-black {
+            width: 23%;
+            line-height: 1.3rem;
+
+            span {
+              display: block;
+
+              &.txt-detach {
+                font-size: 2rem;
+                text-align: right;
+                margin-top: .2rem;
+
+                span {
+                  font-size: .9rem;
+                }
+              }
+            }
+          }
+
+          .txt-orange {
+            font-size: 6rem;
+            color: $mainColor;
+            margin-top: -.5rem;
+
+            sup {
+              font-size: 1.8rem;
+              top: -30%;
+            }
+          }
+        }
+      }
+    } // Fim banner
+
+    .facilities {
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+          width: 50%;
+          margin-bottom: 2rem;
+          box-sizing: border-box;
+          padding: 0 .5rem;
+
+          img {
+            display: inline-block;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    } // Fim facilities
+
+    .cards {
+      background: linear-gradient(180deg, $greyLigh 55%, $white 45%);
+      text-align: center;
+
+      .owl-carousel {
+        .owl-item {
+          .card {
+            min-height: 300px;
+
+            img {
+              width: 97px;
+              height: 97px;
+              margin: 2rem auto 0;
+            }
+
+            .small {
+              line-height: .8rem;
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .owl-dots {
+          display: none;
+        }
+      }
+    } // Fim cards
+
+  }  //Fim main
+
+} // Fim body
+
+
+

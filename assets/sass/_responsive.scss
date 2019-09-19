@@ -5,6 +5,24 @@
 
 // s — Small Screens
 @media (min-width: 640px) {
+  body {
+    main {
+      .banner {
+        background-position: -420px -50px;
+        background-size: 160%;
+
+        .banner-text {
+          margin-top: 24rem;
+
+          .prod-value {
+            .txt-black {
+
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
 

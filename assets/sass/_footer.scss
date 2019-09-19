@@ -1,5 +1,18 @@
 /* Footer */
 
 footer {
+  .container {
+    background-color: $grey;
 
+    p {
+      margin-bottom: .1rem;
+      font-size: .8rem;
+    }
+
+    .documents {
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
 }

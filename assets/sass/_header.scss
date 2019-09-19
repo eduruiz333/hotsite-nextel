@@ -34,11 +34,15 @@ header {
     .btn-dark {
       background-color: $black;
       color: $white;
+      font-weight: bold;
       text-transform: uppercase;
 
       &:hover {
-        background-color: $mainColor;
+        background-color: $white;
+        color: $mainColor;
+        border-color: $mainColor;
       }
     }
   }
 }
+
