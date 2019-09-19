@@ -7,6 +7,7 @@ const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
 gulp.task('sass', compilaSass);
+gulp.task('watch', watch);
 
 function compilaSass() {
     return gulp
@@ -16,5 +17,5 @@ function compilaSass() {
 }
 
 function watch() {
-    gulp.watch('assets/sass/*.scss', compilaSass())
+    gulp.watch('assets/sass/*.scss', compilaSass)
 }
