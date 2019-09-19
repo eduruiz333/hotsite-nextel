@@ -1,0 +1,20 @@
+// Configurações para compilar SASS
+'use strict';
+
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+
+sass.compiler = require('node-sass');
+
+gulp.task('sass', compilaSass);
+
+function compilaSass() {
+    return gulp
+        .src('assets/sass/*.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('assets/styles'));
+}
+
+function watch() {
+    gulp.watch('assets/sass/*.scss', compilaSass())
+}
