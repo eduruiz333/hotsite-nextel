@@ -4,7 +4,7 @@
 }
 
 // s — Small Screens
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   body {
     .w-md-25 {
       width: 25% !important;
@@ -101,7 +101,7 @@
 }
 
 // l — Large Screens
-@media (min-width: 1300px) {
+@media (min-width: 1366px) {
   main {
     .banner {
       .banner-text {
@@ -114,7 +114,7 @@
 }
 
 // xl — Extra Large Screens
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   main {
     .banner {
       background-position: -150px 0 !important;
