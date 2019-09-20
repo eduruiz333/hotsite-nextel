@@ -6,31 +6,125 @@
 // s — Small Screens
 @media (min-width: 640px) {
   body {
+    .w-md-25 {
+      width: 25% !important;
+    }
+    .w-md-50 {
+      width: 50% !important;
+    }
+    .w-md-75 {
+      width: 75% !important;
+    }
+    .w-md-100 {
+      width: 100% !important;
+    }
+    .w-md-auto {
+      width: auto !important;
+    }
+
     main {
       .banner {
-        background-position: -420px -50px;
-        background-size: 160%;
+        background-position: -60px 0px;
+        background-size: 170%;
 
         .banner-text {
-          margin-top: 24rem;
+          margin-top: 0;
+          width: 38%;
+          background-color: transparent !important;
         }
       }
     }
   }
-
 }
 
 // m — Medium Screens
 @media (min-width: 960px) {
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .w-lg-auto {
+    width: auto !important;
+  }
 
+  main {
+    .banner {
+      background-position: -150px 0px !important;
+      background-size: 150% !important;
+
+      .banner-text {
+        margin-top: 5rem !important;
+        margin-bottom: 5rem;
+        width: 30%;
+        background-color: transparent !important;
+      }
+    }
+
+    .facilities {
+      .box {
+        div {
+          width: 25% !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    .banner {
+      background-position: -150px 0px !important;
+
+      .banner-text {
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+        width: 30% !important;
+      }
+    }
+
+    .facilities {
+      .box {
+        div {
+          width: 25% !important;
+        }
+      }
+    }
+  }
 }
 
 // l — Large Screens
-@media (min-width: 1200px) {
-
+@media (min-width: 1300px) {
+  main {
+    .banner {
+      .banner-text {
+        margin-top: 9rem !important;
+        margin-bottom: 9rem !important;
+        width: 35% !important;
+      }
+    }
+  }
 }
 
 // xl — Extra Large Screens
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
+  main {
+    .banner {
+      background-position: -150px 0 !important;
+      background-size: 110% !important;
 
+      .banner-text {
+        margin-top: 10rem !important;
+        margin-bottom: 10rem !important;
+        width: 25% !important;
+      }
+    }
+  }
 }
