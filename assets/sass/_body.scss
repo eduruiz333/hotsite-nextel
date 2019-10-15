@@ -9,13 +9,12 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  transition: ease-in-out all 300ms;
 }
 
 /** Body **/
 body {
   padding-top: 64px;
-  * {
+  .btn-default {
     transition: all ease 300ms;
   }
 

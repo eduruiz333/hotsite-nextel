@@ -10,6 +10,24 @@ footer {
     }
 
     .documents {
+      -webkit-transition:none !important;
+      -moz-transition:none !important;
+      -o-transition:none !important;
+      transition:none !important;
+      a {
+        -webkit-transition:none !important;
+        -moz-transition:none !important;
+        -o-transition:none !important;
+        transition:none !important;
+        color: $black;
+        &:hover {
+          -webkit-transition:none !important;
+          -moz-transition:none !important;
+          -o-transition:none !important;
+          transition:none !important;
+          color: $mainColor;
+        }
+      }
       i {
         font-size: 2rem;
       }
